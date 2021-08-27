@@ -26,7 +26,9 @@ public class PrimeNumberConcurrency {
 		reportedThread.start();
 
 		while (true) {
+			
 			Scanner sc = new Scanner(System.in);
+			
 			System.out.println("Enter the nth number to continue, 0 to exit");
 			int n = sc.nextInt();
 			if (n == 0) {
