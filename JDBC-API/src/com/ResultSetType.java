@@ -19,6 +19,11 @@ public class ResultSetType {
 			ResultSet rs= st.executeQuery(q1);
 			
 			rs.absolute(1);
+			rs.updateString(2, "New Product-V2");
+			rs.updateRow();
+			
+			//rs.
+			//rs.refreshRow();
 			
 			//(rs.next()) {
 				System.out.println(rs.getString("id"));
